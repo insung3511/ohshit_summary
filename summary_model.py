@@ -17,5 +17,6 @@ with open(TEST_TEXT_PATH, 'r') as f:
 
 # Summarize part
 print(
-    summarizer(lines, max_length=SUMARIZE_MAX_LEN, min_length=SUMARIZE_MIN_LEN, do_sample=SUMARIZE_SAMPLE)
+    summarizer(lines, max_length=SUMARIZE_MAX_LEN,
+               min_length=SUMARIZE_MIN_LEN, do_sample=SUMARIZE_SAMPLE)
 )
