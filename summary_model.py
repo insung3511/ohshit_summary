@@ -22,5 +22,4 @@ print(
         max_length=SUMARIZE_MAX_LEN,
         min_length=SUMARIZE_MIN_LEN,
         do_sample=SUMARIZE_SAMPLE,
-    )
-)
+    ))
