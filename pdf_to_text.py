@@ -25,7 +25,7 @@ class PDF2Text:
         paperTitle = str()
         paperTitleHasSaved = False
 
-        pdfFileObj = open(self.FILE_PATH, 'rb')
+        pdfFileObj = open(self.FILE_PATH, "rb")
         pdfFileReader = pp2.PdfFileReader(pdfFileObj)
         pdfPages = pdfFileReader.numPages
         print(f"[INFO] Total pages : {pdfPages}")
