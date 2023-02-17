@@ -1,6 +1,7 @@
 import PyPDF2 as pp2
 import tqdm
 
+
 class PDF2Text:
     def __init__(self, FILE_PATH, saveAsFile, saveFilePath):
         """Document
@@ -13,7 +14,7 @@ class PDF2Text:
 
         saveFilePath : string
         where to save, converted results.
-        
+
         """
         self.FILE_PATH = FILE_PATH
         self.saveAsFile = saveAsFile
@@ -28,7 +29,7 @@ class PDF2Text:
         pdfFileReader = pp2.PdfFileReader(pdfFileObj)
         pdfPages = pdfFileReader.numPages
         print(f"[INFO] Total pages : {pdfPages}")
-        
+
         for pageIndex in tqdm.tqdm(range(pdfPages)):
             pdfPageObj = pdfFileReader.getPage(pageIndex)
             extractTextObj = pdfPageObj.extractText()
