@@ -1,16 +1,11 @@
 {
-    "manifest_version": 2,
-  
-    "name": "OhSh17! Summary!",
-    "description": "Let's do some paper summary",
-    "version": "0.1",
-  
-    "browser_action": {
-      "default_icon": "icon.png",
-      "default_popup": "popup.html"
-    },
-    "permissions": [
-      "activeTab",
-      "https://ajax.googleapis.com/"
-    ]
-  }
+  "manifest_version": 2,
+  "name": "OhSh17! Summary!",
+  "description": "Let's do some paper summary",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "https://ajax.googleapis.com/"]
+}
