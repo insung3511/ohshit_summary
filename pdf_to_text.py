@@ -3,6 +3,7 @@ import tqdm
 
 
 class PDF2Text:
+
     def __init__(self, FILE_PATH, saveAsFile, saveFilePath):
         """Document
 
